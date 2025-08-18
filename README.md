@@ -1,10 +1,10 @@
 # Fruit Freshness Detection
 
-This repository contains an image-processing and machine learning pipeline for detecting the freshness of fruits using computer vision techniques. The implementation is based on Python and common data science libraries, and is intended for educational and experimental purposes.
+This repository contains an image-processing and machine learning pipeline for detecting the freshness of fruits using computer vision techniques. The implementation is based on Python and common data science libraries. A simple yet effective image classification notebook that distinguishes fresh fruits from rotten ones across three categories: apples, bananas, and oranges.
 
 ## Project Overview
 
-The goal of this project is to classify fruits as **fresh** or **stale** using a dataset of fruit images.
+The goal of this project is to classify fruits as **fresh** or **rotten** using a dataset of fruit images.
 It uses image preprocessing, feature extraction, and machine learning models for prediction.
 
 ### Key Features
@@ -19,11 +19,40 @@ It uses image preprocessing, feature extraction, and machine learning models for
 ```
 fruit-freshness/
 ├── sample_images/        # Example fruit images for testing
-├── archive (2)/          # Dataset (zipped or raw)
+├── archive (2)/          # Dataset 
 ├── fruit freshness.ipynb # Main Jupyter Notebook with pipeline
 ├── requirements.txt      # Python dependencies
 └── README.md             # Project documentation
 ```
+
+## Dataset
+
+The project uses the **[Fruits Fresh and Rotten for Classification](https://www.kaggle.com/datasets/sriramr/fruits-fresh-and-rotten-for-classification)** dataset from Kaggle. The dataset contains **13,599 images** of fruit, organized into training and testing splits with six classes:
+
+```
+dataset/
+├── train/
+│   ├── freshapples/     # ~1693 images
+│   ├── freshbanana/     # ~1581 images
+│   ├── freshoranges/    # ~1466 images
+│   ├── rottenapples/    # ~2342 images
+│   ├── rottenbanana/    # ~2224 images
+│   └── rottenoranges/   # ~1595 images
+└── test/
+    ├── freshapples/     # ~395 images
+    ├── freshbanana/     # ~381 images
+    ├── freshoranges/    # ~388 images
+    ├── rottenapples/    # ~601 images
+    ├── rottenbanana/    # ~530 images
+    └── rottenoranges/   # ~403 images
+```
+
+* **Total images**: \~13.6K
+* **Classes**: 6 (fresh vs. rotten for apples, bananas, oranges)
+  ([GitHub][1])
+
+---
+[1]: https://github.com/Bangkit-JKT2-D/fruits-fresh-rotten-classification?utm_source=chatgpt.com "Bangkit-JKT2-D/fruits-fresh-rotten-classification - GitHub"
 
 ## How to Run
 
@@ -95,12 +124,6 @@ The model can be evaluated using:
 
 ---
 
-## Dataset
-
-You can use any fruit image dataset — for example, publicly available fruit freshness datasets from Kaggle.
-The dataset should be organized into separate folders for each class (e.g., `fresh/` and `stale/`).
-
----
 
 ## License
 
