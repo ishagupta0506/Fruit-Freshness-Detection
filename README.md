@@ -109,6 +109,32 @@ opencv-python>=4.6.0
 scikit-image>=0.19.0
 scikit-learn>=1.1.0
 ```
+### Dependencies for Seamless Use of the Notebook
+
+To ensure smooth execution of the Jupyter notebook, please install the following dependencies:
+
+```bash
+pip install jupyter>=1.0.0 notebook>=6.4.0
+```
+
+It is also recommended to install commonly used libraries for deep learning and data processing (if not already available):
+
+```bash
+pip install numpy pandas matplotlib seaborn tensorflow keras scikit-learn
+```
+
+---
+
+### Recommended Enhancements
+
+To further improve the model and project outcomes, consider the following enhancements:
+
+* **Validation Split:** Create a validation set to monitor model performance during training.
+* **CNN Implementation:** Train a custom Convolutional Neural Network for better accuracy compared to traditional ML models.
+* **Transfer Learning:** Leverage pre-trained models (e.g., ResNet50, EfficientNet, MobileNet) for faster convergence and higher accuracy.
+* **Data Augmentation:** Apply techniques like rotation, flipping, zooming, and brightness adjustments to increase dataset variability and reduce overfitting.
+* **Hyperparameter Tuning:** Experiment with batch size, learning rate, and number of epochs for optimal results.
+* **Explainability Tools:** Use Grad-CAM or SHAP to visualize what parts of the fruit images the model focuses on when making predictions.
 
 ---
 
